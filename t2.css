@@ -1,0 +1,40 @@
+
+body {
+    background: purple;
+    line-height: 1;
+}
+
+.c {
+    color: #ffffff;
+    opacity: 0
+    
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  /*animation-name: fadeIn;*/
+  animation: fadeIn 1s both;
+}
+
+.content {
+    font-size: 108px;
+    padding: 200px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.animated {
+  /*animation-duration: 1s;*/
+   /*animation-fill-mode: both;*/
+}

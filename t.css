@@ -1,0 +1,963 @@
+
+body {
+    background: rgb(255, 38, 208);
+}
+  
+  .chest {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 200px 150px;
+    grid-template-rows: 120px 113px;
+    z-index: 1;
+  }
+  
+  .lid-front {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background: #FFC444;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 30px 10px 10px 35px 30px 10px 10px 30px;
+    grid-template-rows: 90px;
+  }
+  
+  .yellow.has-highlight {
+    display: grid;
+    grid-template-rows: 15px 30px;
+    overflow: hidden;
+  }
+  
+  .yellow-highlight {
+    grid-row: 2;
+    background: #FFE59C;
+  }
+  
+  .purple.has-highlight {
+    display: grid;
+    grid-template-rows: 15px 30px;
+    overflow: hidden;
+  }
+  
+  .dark-highlight {
+    grid-row: 2;
+    background: #CC365D;
+  }
+  
+  .lid-front .yellow-left {
+    grid-column: 1 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #FFC444;
+  }
+  
+  .lid-front .yellow-left.shadow {
+    grid-column: 2 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #FF8F1F;
+  }
+  
+  .lid-front .purple-left.shadow {
+    grid-column: 3 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #7C2752;
+  }
+  
+  .lid-front .purple-left {
+    grid-column: 4 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #CC365D;
+  }
+  
+  .lid-front .purple {
+    display: grid;
+    grid-template-rows: 15px 30px 30px 15px;
+    overflow: hidden;
+  }
+  
+  .purple-highlight {
+    grid-row: 2;
+    background: #FC5454;
+  }
+  
+  .lid-front .purple .horizontal-shadow {
+    grid-column: 1;
+    grid-row: 4;
+    background: #7C2752;
+  }
+  
+  .lid-front .yellow-middle {
+    grid-column: 5 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #FFC444;
+  }
+  
+  .lid-front .yellow-middle.shadow {
+    grid-column: 6 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #FF8F1F;
+  }
+  
+  .lid-front .purple-right.shadow {
+    grid-column: 7 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #7C2752;
+  }
+  
+  .lid-front .purple-right {
+    grid-column: 8 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #CC365D;
+  }
+  
+  .lid-front .yellow-right {
+    grid-column: 9 / 10;
+    grid-row: 1;
+    border-top-left-radius: 80px;
+    background: #FFC444;
+  }
+  
+  .lid-front .yellow-right .highlight {
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: -200px;
+    background: #FF9870;
+    mix-blend-mode: screen;
+  }
+  
+  .lid-front .yellow-bottom {
+    grid-column: 1 / 10;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 70px 60px 70px;
+    grid-template-rows: 15px 15px;
+    background: #FFC444;
+  }
+  
+  .lid-front .yellow-bottom .highlight {
+    grid-column: 2;
+    grid-row: 2;
+    background: #FFE59C;
+  }
+  
+  .lid-side {
+    grid-column: 2;
+    grid-row: 1;
+    background: #FF8F1F;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    z-index: 2;
+  }
+  
+  .lid-side .purple {
+    width: 90px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #542246;
+  }
+  
+  .lid-side .purple .highlight {
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background: #7E2B55;
+  }
+  
+  .bottom-front {
+    grid-column: 1;
+    grid-row: 2;
+    background: #FFB024;
+    display: grid;
+    grid-template-columns: 40px 130px 30px;
+    grid-template-rows: 80px 25px 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .bottom-front .left {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background: #FFB024;
+    display: grid;
+    grid-template-columns: 30px 10px;
+    grid-template-rows: 30px 50px;
+  }
+  
+  .bottom-front .left .shadow-side {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    background: #ED6011;
+  }
+  
+  .bottom-front .left .shadow-front {
+    grid-column: 1;
+    grid-row: 1;
+    background: #FF8F1F;
+  }
+  
+  .bottom-front .middle {
+    grid-column: 2;
+    grid-row: 1;
+    background: #7C2752;
+    display: grid;
+    grid-template-columns: 10px 20px 70px 20px 10px;
+    grid-template-rows: 30px 15px 25px 10px;
+  }
+  
+  .bottom-front .middle .highlight {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    background: #CC365D;
+    display: grid;
+    grid-template-columns: 30px 60px;
+    grid-template-rows: 15px 10px;
+  }
+  
+  .bottom-front .middle .highlight .shadow {
+    grid-column: 2;
+    grid-row: 2;
+    background: #7C2752;
+  }
+  
+  .bottom-front .middle .lock {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background: #FFB024;
+    display: grid;
+    grid-template-columns: 15px 30px 15px 10px;
+    grid-template-rows: 30px 15px;
+    z-index: 10;
+  }
+  
+  .lock .yellow-left {
+    grid-column: 1;
+    grid-row: 1;
+    background: #FF8F1F;
+  }
+  
+  .lock .purple-middle {
+    grid-column: 2;
+    grid-row: 1;
+    background: #542246;
+  }
+  
+  .lock .yellow-right {
+    grid-column: 3;
+    grid-row: 1;
+    background: #FF8F1F;
+  }
+  
+  .lock .shadow {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    background: #ED6011;
+  }
+  
+  .bottom-front .right {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background: #FFB024;
+    display: grid;
+    grid-template-rows: 30px 50px;
+  }
+  
+  .bottom-front .right .shadow-front {
+    grid-row: 1;
+    background: #FF8F1F;
+  }
+  
+  .bottom-front .bottom {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background: #FF8F1F;
+  }
+  
+  .bottom-side {
+    grid-column: 2;
+    grid-row: 2;
+    background: #FF8F1F;
+    display: grid;
+    grid-template-columns: 30px 80px 10px 30px;
+    grid-template-rows: 30px 50px 25px 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .bottom-side .shadow {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    background: #ED6011;
+  }
+  
+  
+  .bottom-side .highlight {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background: #FFC444;
+  }
+  
+  .bottom-side .purple-middle {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background: #542246;
+    z-index: 2;
+  }
+  
+  .bottom-side .purple-middle .highlight {
+    width: 60px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background: #7D2953;
+  }
+  
+  .bottom-side .bottom {
+    grid-column: 1 / 5;
+    grid-row: 4;
+    background: #EF6412;
+  }
+  
+  .highlight-chest {
+    position: absolute;
+    grid-row: 3;
+    width: 350px;
+    height: 233px;
+    margin-top: -233px;
+    background: #FF5E5E;
+    z-index: 100;
+    mix-blend-mode: screen;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .highlight-chest:hover {
+    opacity: 1;
+  }
+  
+  .gems {
+    position: relative;
+    width: 126px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 126px;
+  }
+  
+  .purple-gem {
+    transform: translate(10px, 51.5px);
+    z-index: 10;
+  }
+  
+  .pink-gem-left {
+    transform: translate(-240px, 51.5px);
+    z-index: -10;
+  }
+  
+  .pink-gem-right {
+    transform: translate(153px, 25px) rotate(70deg) scaleY(-1);
+    z-index: 10;
+  }
+  
+  .spark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    animation: twinkle 0.8s infinite alternate ease-in;
+    z-index: 300;
+  }
+  
+  /* glow */
+
+  .spark:after {
+    content: '';
+    display: block;
+    margin-top: -32.5px;
+    background: rgb(255, 45, 216);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: blur(13px);
+    opacity: 0.6;
+  }
+  
+  .spark-1 {
+    margin-top: -17%;
+    margin-left: -60px;
+    animation-delay: 1s;
+  }
+  
+  .spark-2 {
+    margin-top: 10%;
+    margin-left: -225px;
+    transform: rotate(45deg);
+    animation-delay: 0.5s;
+  }
+  
+  .spark-3 {
+    margin-top: -50px;
+    margin-left: 190px;
+    animation-delay: 0.3s;
+  }
+  
+  .spark-4 {
+    margin-top: 45px;
+    margin-left: -40%;
+    animation-delay: 0.7s;
+    transform: scale(1.2);
+  }
+
+  .spark-5 {
+    margin-top: -13%;
+    margin-left: -33%;
+    animation-delay: 0.7s;
+    transform: scale(1.2);
+  }
+
+
+  .spark-6 {
+    margin-top: 15%;
+    margin-left: 20%;
+    animation-delay: 0.7s;
+    transform: scale(1.2);
+  }
+
+
+  .spark-7 {
+    margin-top: -9%;
+    margin-left: 23%;
+    animation-delay: 0.7s;
+    transform: scale(1.2);
+  }
+  
+  .white {
+    background: #ff39d4;
+  }
+  
+  .yellow {
+    background: #FF8F1F;
+  }
+  
+  .dust {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 300;
+    animation: twinkle 10.8s infinite alternate ease-in;
+  }
+  
+  .dust-1 {
+    transform: translate(-250px, 40px);
+    animation-delay: 0.7s;
+  }
+  
+  .dust-2 {
+    transform: translate(-225px, -35px);
+    animation-delay: 0.9s;
+  }
+  
+  .dust-3 {
+    transform: translate(-90px, -140px);
+    animation-delay: 1.3s;
+  }
+  
+  .dust-4 {
+    transform: translate(70px, 10px);
+    animation-delay: 1.1s;
+  }
+  
+  .dust-5 {
+    transform: translate(205px, -85px);
+    animation-delay: 0.7s;
+  }
+  
+  .dust-6 {
+    transform: translate(240px, -10px);
+    animation-delay: 0.3s;
+  }
+  
+  h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    color: #B0649E;
+    width: 100%;
+    margin-top: 250px;
+    text-align: center;
+  }
+  
+  a {
+    color: #cf45b6;
+    text-decoration: none;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 0 }
+    100% { opacity: 1}
+  }
+  
+
+  /* heart */
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .bubble {
+    position: absolute;
+    z-index: 200;
+    border-radius: 50%;
+  }
+  .bubble:nth-child(1) {
+    top: 8%;
+    left: 60%;
+  
+    height: 11vmin;
+    width: 11vmin;
+    -webkit-animation: love-burst 3s infinite 0s;
+    animation: love-burst 3s infinite 0s;
+    box-shadow: inset 0 0 0 5.5vmin transparent;
+    -webkit-transform: translate(0, 0.05em) scale(0);
+    transform: translate(0, 0.05em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(2) {
+    top: 83%;
+    left: 14%;
+    height: 20vmin;
+    width: 20vmin;
+    -webkit-animation: love-burst 3s infinite 0.15s;
+    animation: love-burst 3s infinite 0.15s;
+    box-shadow: inset 0 0 0 10vmin transparent;
+    -webkit-transform: translate(0, 0.75em) scale(0);
+    transform: translate(0, 0.75em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(3) {
+    top: 25%;
+    left: 49%;
+    height: 4vmin;
+    width: 4vmin;
+    -webkit-animation: love-burst 3s infinite 0.3s;
+    animation: love-burst 3s infinite 0.3s;
+    box-shadow: inset 0 0 0 2vmin transparent;
+    -webkit-transform: translate(0, 0.5em) scale(0);
+    transform: translate(0, 0.5em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(4) {
+    top: 63%;
+    left: 93%;
+    height: 3vmin;
+    width: 3vmin;
+    -webkit-animation: love-burst 3s infinite 0.45s;
+    animation: love-burst 3s infinite 0.45s;
+    box-shadow: inset 0 0 0 1.5vmin transparent;
+    -webkit-transform: translate(0, 0.35em) scale(0);
+    transform: translate(0, 0.35em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(5) {
+    top: 7%;
+    left: 56%;
+    height: 18vmin;
+    width: 18vmin;
+    -webkit-animation: love-burst 3s infinite 0.6s;
+    animation: love-burst 3s infinite 0.6s;
+    box-shadow: inset 0 0 0 9vmin transparent;
+    -webkit-transform: translate(0, 0.3em) scale(0);
+    transform: translate(0, 0.3em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(6) {
+    top: 10%;
+    left: 68%;
+    height: 5vmin;
+    width: 5vmin;
+    -webkit-animation: love-burst 3s infinite 0.75s;
+    animation: love-burst 3s infinite 0.75s;
+    box-shadow: inset 0 0 0 2.5vmin transparent;
+    -webkit-transform: translate(0, 1.1em) scale(0);
+    transform: translate(0, 1.1em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(7) {
+    top: 68%;
+    left: 1%;
+    height: 5vmin;
+    width: 5vmin;
+    -webkit-animation: love-burst 3s infinite 0.9s;
+    animation: love-burst 3s infinite 0.9s;
+    box-shadow: inset 0 0 0 2.5vmin transparent;
+    -webkit-transform: translate(0, 0.15em) scale(0);
+    transform: translate(0, 0.15em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(8) {
+    top: 61%;
+    left: 51%;
+    height: 11vmin;
+    width: 11vmin;
+    -webkit-animation: love-burst 3s infinite 1.05s;
+    animation: love-burst 3s infinite 1.05s;
+    box-shadow: inset 0 0 0 5.5vmin transparent;
+    -webkit-transform: translate(0, 1.05em) scale(0);
+    transform: translate(0, 1.05em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(9) {
+    top: 24%;
+    left: 45%;
+    height: 11vmin;
+    width: 11vmin;
+    -webkit-animation: love-burst 3s infinite 1.2s;
+    animation: love-burst 3s infinite 1.2s;
+    box-shadow: inset 0 0 0 5.5vmin transparent;
+    -webkit-transform: translate(0, 1em) scale(0);
+    transform: translate(0, 1em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(10) {
+    top: 13%;
+    left: 10%;
+    height: 19vmin;
+    width: 19vmin;
+    -webkit-animation: love-burst 3s infinite 1.35s;
+    animation: love-burst 3s infinite 1.35s;
+    box-shadow: inset 0 0 0 9.5vmin transparent;
+    -webkit-transform: translate(0, 1em) scale(0);
+    transform: translate(0, 1em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(11) {
+    top: 76%;
+    left: 7%;
+    height: 14vmin;
+    width: 14vmin;
+    -webkit-animation: love-burst 3s infinite 1.5s;
+    animation: love-burst 3s infinite 1.5s;
+    box-shadow: inset 0 0 0 7vmin transparent;
+    -webkit-transform: translate(0, 0.1em) scale(0);
+    transform: translate(0, 0.1em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(12) {
+    top: 22%;
+    left: 8%;
+    height: 17vmin;
+    width: 17vmin;
+    -webkit-animation: love-burst 3s infinite 1.65s;
+    animation: love-burst 3s infinite 1.65s;
+    box-shadow: inset 0 0 0 8.5vmin transparent;
+    -webkit-transform: translate(0, 0.2em) scale(0);
+    transform: translate(0, 0.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(13) {
+    top: 23%;
+    left: 81%;
+    height: 16vmin;
+    width: 16vmin;
+    -webkit-animation: love-burst 3s infinite 1.8s;
+    animation: love-burst 3s infinite 1.8s;
+    box-shadow: inset 0 0 0 8vmin transparent;
+    -webkit-transform: translate(0, 0.1em) scale(0);
+    transform: translate(0, 0.1em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(14) {
+    top: 77%;
+    left: 88%;
+    height: 3vmin;
+    width: 3vmin;
+    -webkit-animation: love-burst 3s infinite 1.95s;
+    animation: love-burst 3s infinite 1.95s;
+    box-shadow: inset 0 0 0 1.5vmin transparent;
+    -webkit-transform: translate(0, 0.45em) scale(0);
+    transform: translate(0, 0.45em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(15) {
+    top: 41%;
+    left: 1%;
+    height: 9vmin;
+    width: 9vmin;
+    -webkit-animation: love-burst 3s infinite 2.1s;
+    animation: love-burst 3s infinite 2.1s;
+    box-shadow: inset 0 0 0 4.5vmin transparent;
+    -webkit-transform: translate(0, 0.05em) scale(0);
+    transform: translate(0, 0.05em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(16) {
+    top: 51%;
+    left: 51%;
+    height: 8vmin;
+    width: 8vmin;
+    -webkit-animation: love-burst 3s infinite 2.25s;
+    animation: love-burst 3s infinite 2.25s;
+    box-shadow: inset 0 0 0 4vmin transparent;
+    -webkit-transform: translate(0, 1.15em) scale(0);
+    transform: translate(0, 1.15em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(17) {
+    top: 37%;
+    left: 65%;
+    height: 11vmin;
+    width: 11vmin;
+    -webkit-animation: love-burst 3s infinite 2.4s;
+    animation: love-burst 3s infinite 2.4s;
+    box-shadow: inset 0 0 0 5.5vmin transparent;
+    -webkit-transform: translate(0, 0.2em) scale(0);
+    transform: translate(0, 0.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(18) {
+    top: 11%;
+    left: 83%;
+    height: 18vmin;
+    width: 18vmin;
+    -webkit-animation: love-burst 3s infinite 2.55s;
+    animation: love-burst 3s infinite 2.55s;
+    box-shadow: inset 0 0 0 9vmin transparent;
+    -webkit-transform: translate(0, 0.9em) scale(0);
+    transform: translate(0, 0.9em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(19) {
+    top: 64%;
+    left: 86%;
+    height: 12vmin;
+    width: 12vmin;
+    -webkit-animation: love-burst 3s infinite 2.7s;
+    animation: love-burst 3s infinite 2.7s;
+    box-shadow: inset 0 0 0 6vmin transparent;
+    -webkit-transform: translate(0, 0.65em) scale(0);
+    transform: translate(0, 0.65em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(20) {
+    top: 39%;
+    left: 24%;
+    height: 19vmin;
+    width: 19vmin;
+    -webkit-animation: love-burst 3s infinite 2.85s;
+    animation: love-burst 3s infinite 2.85s;
+    box-shadow: inset 0 0 0 9.5vmin transparent;
+    -webkit-transform: translate(0, 0.2em) scale(0);
+    transform: translate(0, 0.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  
+  @-webkit-keyframes love-burst {
+    50%,
+    100% {
+      box-shadow: inset 0 0 0 0 rgb(1, 175, 73);
+      -webkit-transform: translate(0, 0) scale(1);
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  @keyframes love-burst {
+    50%,
+    100% {
+      box-shadow: inset 0 0 0 0 rgb(18, 226, 129);
+      -webkit-transform: translate(0, 0) scale(1);
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  .heart {
+    fill: transparent;
+    opacity: 0;
+  }
+  .bubble:nth-child(1) .heart {
+    -webkit-animation: love 3s forwards infinite 0s;
+    animation: love 3s forwards infinite 0s;
+    -webkit-transform: scale(0.5) rotate(-4deg);
+    transform: scale(0.5) rotate(-4deg);
+  }
+  .bubble:nth-child(2) .heart {
+    -webkit-animation: love 3s forwards infinite 0.15s;
+    animation: love 3s forwards infinite 0.15s;
+    -webkit-transform: scale(0.5) rotate(22deg);
+    transform: scale(0.5) rotate(22deg);
+  }
+  .bubble:nth-child(3) .heart {
+    -webkit-animation: love 3s forwards infinite 0.3s;
+    animation: love 3s forwards infinite 0.3s;
+    -webkit-transform: scale(0.5) rotate(-5deg);
+    transform: scale(0.5) rotate(-5deg);
+  }
+  .bubble:nth-child(4) .heart {
+    -webkit-animation: love 3s forwards infinite 0.45s;
+    animation: love 3s forwards infinite 0.45s;
+    -webkit-transform: scale(0.5) rotate(50deg);
+    transform: scale(0.5) rotate(50deg);
+  }
+  .bubble:nth-child(5) .heart {
+    -webkit-animation: love 3s forwards infinite 0.6s;
+    animation: love 3s forwards infinite 0.6s;
+    -webkit-transform: scale(0.5) rotate(-29deg);
+    transform: scale(0.5) rotate(-29deg);
+  }
+  .bubble:nth-child(6) .heart {
+    -webkit-animation: love 3s forwards infinite 0.75s;
+    animation: love 3s forwards infinite 0.75s;
+    -webkit-transform: scale(0.5) rotate(35deg);
+    transform: scale(0.5) rotate(35deg);
+  }
+  .bubble:nth-child(7) .heart {
+    -webkit-animation: love 3s forwards infinite 0.9s;
+    animation: love 3s forwards infinite 0.9s;
+    -webkit-transform: scale(0.5) rotate(-5deg);
+    transform: scale(0.5) rotate(-5deg);
+  }
+  .bubble:nth-child(8) .heart {
+    -webkit-animation: love 3s forwards infinite 1.05s;
+    animation: love 3s forwards infinite 1.05s;
+    -webkit-transform: scale(0.5) rotate(40deg);
+    transform: scale(0.5) rotate(40deg);
+  }
+  .bubble:nth-child(9) .heart {
+    -webkit-animation: love 3s forwards infinite 1.2s;
+    animation: love 3s forwards infinite 1.2s;
+    -webkit-transform: scale(0.5) rotate(-35deg);
+    transform: scale(0.5) rotate(-35deg);
+  }
+  .bubble:nth-child(10) .heart {
+    -webkit-animation: love 3s forwards infinite 1.35s;
+    animation: love 3s forwards infinite 1.35s;
+    -webkit-transform: scale(0.5) rotate(28deg);
+    transform: scale(0.5) rotate(28deg);
+  }
+  .bubble:nth-child(11) .heart {
+    -webkit-animation: love 3s forwards infinite 1.5s;
+    animation: love 3s forwards infinite 1.5s;
+    -webkit-transform: scale(0.5) rotate(-3deg);
+    transform: scale(0.5) rotate(-3deg);
+  }
+  .bubble:nth-child(12) .heart {
+    -webkit-animation: love 3s forwards infinite 1.65s;
+    animation: love 3s forwards infinite 1.65s;
+    -webkit-transform: scale(0.5) rotate(48deg);
+    transform: scale(0.5) rotate(48deg);
+  }
+  .bubble:nth-child(13) .heart {
+    -webkit-animation: love 3s forwards infinite 1.8s;
+    animation: love 3s forwards infinite 1.8s;
+    -webkit-transform: scale(0.5) rotate(-33deg);
+    transform: scale(0.5) rotate(-33deg);
+  }
+  .bubble:nth-child(14) .heart {
+    -webkit-animation: love 3s forwards infinite 1.95s;
+    animation: love 3s forwards infinite 1.95s;
+    -webkit-transform: scale(0.5) rotate(40deg);
+    transform: scale(0.5) rotate(40deg);
+  }
+  .bubble:nth-child(15) .heart {
+    -webkit-animation: love 3s forwards infinite 2.1s;
+    animation: love 3s forwards infinite 2.1s;
+    -webkit-transform: scale(0.5) rotate(-29deg);
+    transform: scale(0.5) rotate(-29deg);
+  }
+  .bubble:nth-child(16) .heart {
+    -webkit-animation: love 3s forwards infinite 2.25s;
+    animation: love 3s forwards infinite 2.25s;
+    -webkit-transform: scale(0.5) rotate(19deg);
+    transform: scale(0.5) rotate(19deg);
+  }
+  .bubble:nth-child(17) .heart {
+    -webkit-animation: love 3s forwards infinite 2.4s;
+    animation: love 3s forwards infinite 2.4s;
+    -webkit-transform: scale(0.5) rotate(-29deg);
+    transform: scale(0.5) rotate(-29deg);
+  }
+  .bubble:nth-child(18) .heart {
+    -webkit-animation: love 3s forwards infinite 2.55s;
+    animation: love 3s forwards infinite 2.55s;
+    -webkit-transform: scale(0.5) rotate(14deg);
+    transform: scale(0.5) rotate(14deg);
+  }
+  .bubble:nth-child(19) .heart {
+    -webkit-animation: love 3s forwards infinite 2.7s;
+    animation: love 3s forwards infinite 2.7s;
+    -webkit-transform: scale(0.5) rotate(-10deg);
+    transform: scale(0.5) rotate(-10deg);
+  }
+  .bubble:nth-child(20) .heart {
+    -webkit-animation: love 3s forwards infinite 2.85s;
+    animation: love 3s forwards infinite 2.85s;
+    -webkit-transform: scale(0.5) rotate(46deg);
+    transform: scale(0.5) rotate(46deg);
+  }
+  
+  @-webkit-keyframes love {
+    50% {
+      fill: rgb(253, 66, 19);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes love {
+    50% {
+      fill: rgb(253, 93, 19);
+      opacity: 1;
+    }
+  }
